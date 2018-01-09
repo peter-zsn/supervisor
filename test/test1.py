@@ -7,6 +7,7 @@
 @time: 2018/1/8 11:02
 """
 import time
+import sys
 import logging
 from db_config import get_db
 from twisted.internet import reactor
@@ -17,30 +18,25 @@ db = get_db(250)
 list_tmp = [1, 2, 3, 4, 5, 6, 7]
 
 logging.basicConfig(level=logging.INFO,
-                    filename='/root/sh/tmp/test/test1.log',
+                    stream=sys.stdout,
                     format='SCRIPT: %(asctime)s %(name)-12s %(levelname)-8s %(message)s',
                     datefmt='%Y-%m-%d %H:%M:%S',
                     filemode='w')
 
 class Worker:
     def handle(self):
-        try:
-            for i in list_tmp:
-                result = db.tbkt_yingyu.test.get(id=i)
-                logging.info(result.id)
-        except Exception as e:
-            logging.error(e)
-
+        for i in list_tmp:
+            result = db.tbkt_yingyu.test.get(id=i)
+            logging.info(result.id)
+            time.sleep(4)
 
     def start(self):
         while 1:
             try:
                 self.handle()
                 logging.info('good exist')
-                time.sleep(4)  # 处理完了 睡4s
             except Exception, e:
                 logging.error(e)
-                time.sleep(1)  # 报错睡1秒， 继续进行
 
 if __name__ == '__main__':
     worker = Worker()

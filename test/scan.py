@@ -101,9 +101,16 @@ while True:
         is_app_content = True
         app_content = line
     elif line.startswith('SCRIPT: ') and 'INFO  ' in line:
-        q.put(('SCRIPT', app_content))
+        if is_app_content:
+            q.put(('SCRIPT', app_content))
+        print 11111111
+        is_app_content = True
+        app_content = line
     elif line.startswith('SCRIPT: ') and 'ERROR  ' in line:
-        q.put(('SCRIPT', app_content))
+        if is_app_content:
+            q.put(('SCRIPT', app_content))
+        is_app_content = True
+        app_content = line
     elif is_app_content and line == '\n':
         q.put(('app', app_content))
         is_app_content = False
