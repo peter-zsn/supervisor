@@ -17,6 +17,7 @@ db = get_db(250)
 
 list_tmp = [1, 2, 3, 4, 5, 6, 7]
 
+
 logging.basicConfig(level=logging.INFO,
                     stream=sys.stdout,
                     format='SCRIPT: %(asctime)s %(name)-12s %(levelname)-8s %(message)s',
