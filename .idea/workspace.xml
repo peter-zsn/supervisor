@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7647048c-d493-4f7e-bc73-1866ebea39a5" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/~$pervisor使用说明.docx" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/scan.py" afterPath="$PROJECT_DIR$/test/scan.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/supervisor_test/conf.d/test.ini" afterPath="$PROJECT_DIR$/test/supervisor_test/conf.d/test.ini" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/supervisor_test/conf.d/test1.ini" afterPath="$PROJECT_DIR$/test/supervisor_test/conf.d/test1.ini" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test.py" afterPath="$PROJECT_DIR$/test/test.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test1.py" afterPath="$PROJECT_DIR$/test/test1.py" />
     </list>
     <ignored path="supervisor.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,7 +29,7 @@
         <entry file="file://$PROJECT_DIR$/test/test.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="441">
-              <caret line="21" column="86" selection-start-line="21" selection-start-column="86" selection-end-line="21" selection-end-column="86" />
+              <caret line="21" column="147" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="147" />
               <folding>
                 <element signature="e#86#97#0" expanded="true" />
               </folding>
@@ -45,27 +41,17 @@
         <entry file="file://$PROJECT_DIR$/test/supervisor_test/conf.d/test1.ini">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="189">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.ini" pinned="false" current-in-tab="false">
+      <file leaf-file-name="test.ini" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/supervisor_test/conf.d/test.ini">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="189">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="scan.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/scan.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="54" column="32" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="32" />
+              <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -81,9 +67,9 @@
       <list>
         <option value="$PROJECT_DIR$/test/test.py" />
         <option value="$PROJECT_DIR$/test/test1.py" />
-        <option value="$PROJECT_DIR$/test/supervisor_test/conf.d/test.ini" />
-        <option value="$PROJECT_DIR$/test/supervisor_test/conf.d/test1.ini" />
         <option value="$PROJECT_DIR$/test/scan.py" />
+        <option value="$PROJECT_DIR$/test/supervisor_test/conf.d/test1.ini" />
+        <option value="$PROJECT_DIR$/test/supervisor_test/conf.d/test.ini" />
       </list>
     </option>
   </component>
@@ -94,8 +80,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="52" />
-    <option name="y" value="20" />
+    <option name="x" value="36" />
+    <option name="y" value="7" />
     <option name="width" value="1841" />
     <option name="height" value="1056" />
   </component>
@@ -462,10 +448,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="52" y="20" width="1841" height="1056" extended-state="0" />
+    <frame x="36" y="7" width="1841" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16280384" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18824194" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -564,26 +550,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/supervisor_test/conf.d/test1.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/supervisor_test/conf.d/test.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="441">
-          <caret line="21" column="86" selection-start-line="21" selection-start-column="86" selection-end-line="21" selection-end-column="86" />
+          <caret line="21" column="147" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="147" />
           <folding>
             <element signature="e#86#97#0" expanded="true" />
           </folding>
@@ -592,8 +562,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/scan.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="54" column="32" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="32" />
+        <state relative-caret-position="273">
+          <caret line="20" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="119" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/supervisor_test/conf.d/test1.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/supervisor_test/conf.d/test.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
           <folding />
         </state>
       </provider>
