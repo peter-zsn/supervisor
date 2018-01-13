@@ -8,6 +8,7 @@
 """
 import time
 import logging
+import sys
 from db_config import get_db
 from twisted.internet import reactor
 from twisted.application import service
@@ -17,8 +18,8 @@ db = get_db(250)
 list_tmp = [1, 2, 3, 4, 5, 6, 7]
 
 logging.basicConfig(level=logging.INFO,
-                    filename='/root/sh/tmp/test/test.log',
-                    format='SCRIPT: %(asctime)s %(name)-12s %(levelname)-8s %(message)s',
+                    stream=sys.stdout,
+                    format='SCRIPT: %(filename)s: %(asctime)s %(name)s %(levelname)s  %(filename)s[line:%(lineno)d func:%(funcName)s] %(message)s',
                     datefmt='%Y-%m-%d %H:%M:%S',
                     filemode='w')
 
@@ -36,7 +37,7 @@ class Worker:
         while 1:
             try:
                 self.handle()
-                logging.info('good exist')
+                logging.info('test good exist')
                 time.sleep(4)  # 处理完了 睡4s
             except Exception, e:
                 logging.error(e)

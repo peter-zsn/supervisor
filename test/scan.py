@@ -49,13 +49,15 @@ def worker():
                 KEY_LIST = "hn_tbkt_uwsgi"
             elif c_type == 'SCRIPT':
                 data = {'api_token': API_TOKEN}
-                date, time, data['name_kw'], data['level_kw'], message = content.split(' ', 5)[1:]
+                script_name, date, time, data['name_kw'], data['level_kw'], message = content.split(' ', 6)[1:]
+                script_name = script_name.split('.')[0]
+                data['script_name'] = script_name
                 data['message_kw'] = message.lstrip()
                 m = hashlib.md5()
                 m.update(message.lstrip().encode('UTF-8'))
                 data['md5_msg'] = m.hexdigest()
                 data['created_dt'] = date + ' ' + time
-                KEY_LIST = "test_script"
+                KEY_LIST = "hn_tbkt_script"
             else:
                 data = {'api_token': API_TOKEN}
                 date, time, data['name_kw'], data['level_kw'], message = content.split(' ', 5)[1:]
@@ -72,6 +74,7 @@ def worker():
             elif c_type == 'uwsgi' and COLLECT_UWSGI_LOG == 'True':
                 rconn.lpush(KEY_LIST, json.dumps(data))
         except BaseException as e:
+            print e
             logging.error(e)
 
 
@@ -103,7 +106,6 @@ while True:
     elif line.startswith('SCRIPT: ') and 'INFO  ' in line:
         if is_app_content:
             q.put(('SCRIPT', app_content))
-        print 11111111
         is_app_content = True
         app_content = line
     elif line.startswith('SCRIPT: ') and 'ERROR  ' in line:

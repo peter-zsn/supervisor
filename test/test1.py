@@ -20,9 +20,10 @@ list_tmp = [1, 2, 3, 4, 5, 6, 7]
 
 logging.basicConfig(level=logging.INFO,
                     stream=sys.stdout,
-                    format='SCRIPT: %(asctime)s %(name)-12s %(levelname)-8s %(message)s',
+                    format='SCRIPT: %(filename)s: %(asctime)s %(name)s %(levelname)s  %(filename)s[line:%(lineno)d func:%(funcName)s] %(message)s',
                     datefmt='%Y-%m-%d %H:%M:%S',
                     filemode='w')
+
 
 class Worker:
     def handle(self):
@@ -35,9 +36,10 @@ class Worker:
         while 1:
             try:
                 self.handle()
-                logging.info('good exist')
+                logging.info('test1 good exist')
             except Exception, e:
                 logging.error(e)
+                logging.info('test1 err exist')
 
 if __name__ == '__main__':
     worker = Worker()
