@@ -9,9 +9,9 @@ import sys
 import os
 import hashlib
 
-REDIS_HOST = os.getenv('ES_REDIS_HOST', '192.168.7.250')
+REDIS_HOST = os.getenv('ES_REDIS_HOST', '192.168.7.***')
 REDIS_DB_ID = os.getenv('ES_REDIS_DB_ID', '8')
-REDIS_PASSWORD = os.getenv('ES_REDIS_PASSWORD', 'jxtbkt2013!')
+REDIS_PASSWORD = os.getenv('ES_REDIS_PASSWORD', '******')
 COLLECT_UWSGI_LOG = os.getenv('COLLECT_UWSGI_LOG', '')
 
 API_TOKEN = os.getenv('__API_TOKEN', '123456')
